@@ -1,0 +1,22 @@
+server:
+  port: 8887
+
+
+spring:
+  application:
+    name: FTP-Server
+    jpa:
+      database: MYSQL
+      hibernate:
+        ddl-auto: update
+      #open-in-view: false
+      show-sql: true
+      properties:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/ftptest?useSSL=false&serverTimezone=UTC&zeroDateTimeBehavior=convertToNull
+      username: root
+      password: 1234
