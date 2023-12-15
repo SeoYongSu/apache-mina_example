@@ -86,8 +86,6 @@ public class FtpServerConfig {
             e.printStackTrace();
         }
     }
-
-    //여기 JPA로 수정 예정임.  ->> 확인결과 JPA로는 JDBC 커넥션이 계속 물려있어 안쓰는게 좋을듯함.
     private UserManagerFactory ftpUserMangerFactory() {
         DbUserManagerFactory dbUserManagerFactory = new DbUserManagerFactory();
         //todo....
